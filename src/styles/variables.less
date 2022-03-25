@@ -1,0 +1,86 @@
+@import '~antd/lib/style/themes/default.less';
+
+//
+// CSS ENV
+// -----------------------------------------
+@safe-area-top: env(safe-area-inset-top);
+@safe-area-bottom: env(safe-area-inset-bottom);
+@safe-area-left: env(safe-area-inset-left);
+@safe-area-right: env(safe-area-inset-right);
+
+//
+// PROJECT
+// -----------------------------------------
+@THEME--DARK: ~'theme-dark';
+
+//
+// ANTD
+// ------------------------------------------
+// Common
+@height-base: 32px;
+@height-lg: 46px;
+@height-sm: 24px;
+
+// Font
+@font-size-base: 14px;
+
+@font-chinese: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei',
+  '\5FAE\8F6F\96C5\9ED1'; // prettier-ignore
+@font-family: -apple-system, BlinkMacSystemFont, @font-chinese, 'Helvetica Neue', Helvetica, Ubuntu, Roboto, Noto, 'Segoe UI', Arial, sans-serif; // prettier-ignore
+@style-ui-family: -apple-system, BlinkMacSystemFont, @font-chinese, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', Arial, sans-serif; // prettier-ignore
+@number-family: 'Avenir Next', 'Avenir', 'Segoe UI', Roboto, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif; // prettier-ignore
+@price-family: @number-family;
+@code-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+
+// Layout
+@page-padding-x: 20px;
+
+// Form
+//@label-required-color: @highlight-color;
+//@label-color: @heading-color;
+//@form-warning-input-bg: @input-bg;
+@form-item-margin-bottom: 20px; // [24px]
+//@form-item-trailing-colon: true;
+//@form-vertical-label-padding: 0 0 8px;
+//@form-vertical-label-margin: 0;
+//@form-item-label-font-size: @font-size-base;
+//@form-item-label-height: @input-height-base;
+//@form-item-label-colon-margin-right: 8px;
+//@form-item-label-colon-margin-left: 2px;
+//@form-error-input-bg: @input-bg;
+
+// Colors
+@primary-color: #090909;
+@primary-color--dark: #ffff;
+
+// -------- Colors -----------
+@info-color: @primary-color;
+@success-color: @green-6;
+@processing-color: @blue-6;
+@error-color: @red-5;
+@highlight-color: @red-5;
+@warning-color: @gold-6;
+@normal-color: #d9d9d9;
+@white: #fff;
+@black: #000;
+
+@primary-color-bg: #fff;
+@primary-color-bg--dark: #111;
+
+@text-color: #111;
+@text-color--dark: #eee;
+
+@gray-color: #cbcbcb;
+@gray-color--dark: #8f8f8f;
+
+// Border
+@border-radius-base: 4px;
+@border-radius-sm: 4px;
+
+// Screen
+@screen-xs: 480px; // Phone
+@screen-sm: 768px; // Pda P
+@screen-md: 768px; // Pad L
+@screen-lg: 992px; // PC
+@screen-xl: 12000px; // -
+@screen-xxl: 16000px; // -

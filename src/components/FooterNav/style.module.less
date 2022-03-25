@@ -1,0 +1,83 @@
+@import '/src/styles/variables.less';
+@import '/src/styles/mixin.less';
+
+.comp-wrapper {
+  display: flex;
+  margin: 0 var(--page-padding-x);
+  padding: var(--page-padding-x) 0;
+}
+
+.copyright {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  place-items: center;
+}
+
+.copyright-text {
+  @color: #999;
+
+  //display: block;
+  font-size: 12px;
+  line-height: 1;
+  color: @color;
+
+  strong {
+    font-weight: 400;
+  }
+
+  span {
+  }
+
+  a {
+    display: inline-block;
+    padding: 0;
+    color: @color;
+
+    &:hover {
+      color: var(--primary-color);
+      text-decoration: underline;
+    }
+  }
+}
+
+.logo-link {
+  margin-top: -2px;
+  line-height: 1;
+  display: flex;
+  justify-content: space-between;
+  place-items: center;
+
+  .switch-language {
+    margin-right: 3px;
+    display: inline-block;
+  }
+
+  .logo {
+    display: inline-block;
+    width: 16px;
+    line-height: 1;
+
+    svg {
+      vertical-align: -1px;
+      color: #777;
+      width: 13px;
+    }
+  }
+
+  .switch-language-button {
+    transition: all 0.3s;
+    opacity: 0.5;
+    .font-size-11px();
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+// DARK-MODE--COMP
+.comp-wrapper--alwaysDarkMode,
+:global(.@{THEME--DARK}) .comp-wrapper {
+}
